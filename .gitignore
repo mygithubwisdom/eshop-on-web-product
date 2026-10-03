@@ -1,0 +1,94 @@
+# Secrets stay on your computer. Only the empty example is committed.
+.env
+.env.*
+!.env.example
+# Generated dependencies and build files
+node_modules/
+.next/
+out/
+.vercel/
+# Local customer/demo data and test output
+.data/
+test-results/
+playwright-report/
+*.log
+.DS_Store
+# AWS/Lambda deployment artifacts - ZIP files
+*.zip
+**/*.zip
+
+# ------------------------------------------------------------------------------
+# Dependencies & Modules
+# ------------------------------------------------------------------------------
+modules/
+vendor/
+jspm_packages/
+
+# ------------------------------------------------------------------------------
+# Build Artifacts & Compiled Distributions
+# ------------------------------------------------------------------------------
+build/
+dist/
+target/
+*.tsbuildinfo
+
+# ------------------------------------------------------------------------------
+# Compression Archives, Layer ZIPs & Java Artifacts
+# ------------------------------------------------------------------------------
+*layer*.zip
+*java-layer*.zip
+layers/
+java-layer/
+*.tar
+*.tar.gz
+*.tgz
+*.gz
+*.rar
+*.7z
+*.jar
+*.war
+*.ear
+*.class
+
+# Serverless & Cloud deployment bundles
+.serverless/
+.aws-sam/
+
+# ------------------------------------------------------------------------------
+# Logs & Debug Dumps
+# ------------------------------------------------------------------------------
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ------------------------------------------------------------------------------
+# Security & Credentials
+# ------------------------------------------------------------------------------
+*.pem
+*.key
+*.cert
+*.crt
+
+# ------------------------------------------------------------------------------
+# Local Databases & State Storage
+# ------------------------------------------------------------------------------
+*.sqlite
+*.sqlite3
+*.db
+
+# ------------------------------------------------------------------------------
+# Testing & Coverage Outputs
+# ------------------------------------------------------------------------------
+coverage/
+.nyc_output/
+
+# ------------------------------------------------------------------------------
+# OS & Editor Metadata
+# ------------------------------------------------------------------------------
+Thumbs.db
+.idea/
+*.swp
+*~
